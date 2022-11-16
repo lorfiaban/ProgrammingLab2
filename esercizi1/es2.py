@@ -6,9 +6,12 @@ def sum_list(list):
     return(somma)
 
 
-list=[2, 5, 4, 7]
+list=[]
 som=sum_list(list)
-print('valore {}'.format(som))
+if len(list)==0:
+    print('none')
+else:
+    print('{}'.format(som))
 
 
 
