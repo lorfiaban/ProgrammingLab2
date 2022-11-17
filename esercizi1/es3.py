@@ -1,11 +1,12 @@
-def sum_csv(file_name):
+def sum_csv(my_file):
     sum=0
-    for line in file_name:
+    for line in my_file:
         elements=line.split(',')
-        if elements[0] != 'date' and elements[0] != 'sales':
-            value=float(elements[0])
+        if elements[1] != 'Date' and elements[1] != 'Sales\n':
+            value=float(elements[1])
             sum=sum+value
-       # else:
-        #    value=float(elements[1])
-         #   sum=sum+value
     return(sum)
+
+
+#my_file=open('shampoo_sales.csv','r')
+#print('{}'.format(sum_csv(my_file)))
