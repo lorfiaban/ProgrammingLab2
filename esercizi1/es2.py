@@ -12,8 +12,3 @@ def sum_list(list):
 list=[]
 som=sum_list(list)
 print('{}'.format(som))
-
-
-
-
-
