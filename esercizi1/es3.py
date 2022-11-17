@@ -1,6 +1,6 @@
-def sum_csv(my_file):
+def sum_csv(file_name):
     sum=0
-    for line in my_file:
+    for line in file_name:
         elements=line.split(',')
         if elements[1] != 'Date' and elements[1] != 'Sales\n':
             value=float(elements[1])
